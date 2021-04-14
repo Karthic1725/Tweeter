@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tweeter</string>
+    <string name="home">Home</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="go_to_sign_up">No account? Go to Sign Up</string>
+    <string name="username">Username</string>
+    <string name="go_to_login">Already have an account? Go to Login</string>
+    <string name="email_is_required">Email is required</string>
+    <string name="password_is_required">Password is required</string>
+    <string name="login_error">Login error : %1$s</string>
+    <string name="sign_up_error">SignUp error : %1$s</string>
+    <string name="username_is_require">Username is required</string>
+    <string name="confirm_password_is_required">Confirm password is required</string>
+    <string name="password_mismatch">Password mismatch</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="search">Search</string>
+    <string name="what_do_you_wanna_talk_about">What do you wanna talk about?</string>
+    <string name="tweet">Tweet</string>
+    <string name="success">Posted Successfully</string>
+    <string name="edit_tweet">Edit Tweet</string>
+    <string name="delete_tweet">Delete Tweet</string>
+    <string name="update_tweet">Update Tweet</string>
+    <string name="feed">Feed</string>
+</resources>

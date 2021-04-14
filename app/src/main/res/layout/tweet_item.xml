@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/userImage"
+            app:layout_constraintRight_toRightOf="@id/context_menu"
+            app:layout_constraintTop_toTopOf="@id/userImage"/>
+
+        <ImageView
+            android:id="@+id/context_menu"
+            android:layout_width="24dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_context_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@id/userName" />
+
+        <TextView
+            android:id="@+id/createdAt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintLeft_toRightOf="@id/userImage"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userName" />
+
+        <TextView
+            android:id="@+id/tweetTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/userImage"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userImage" />
+
+        <ImageView
+            android:id="@+id/likeButton"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintLeft_toLeftOf="@id/userName"
+            app:layout_constraintTop_toBottomOf="@id/tweetTitle" />
+
+        <TextView
+            android:id="@+id/likeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            app:layout_constraintBottom_toBottomOf="@id/likeButton"
+            app:layout_constraintLeft_toRightOf="@id/likeButton"
+            app:layout_constraintTop_toTopOf="@id/likeButton" />
+
+        <ImageView
+            android:id="@+id/reTweetButton"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="@id/likeButton"
+            app:layout_constraintLeft_toRightOf="@id/likeCount"
+            app:layout_constraintTop_toTopOf="@id/likeButton"/>
+
+        <TextView
+            android:id="@+id/reTweetCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            app:layout_constraintBottom_toBottomOf="@id/reTweetButton"
+            app:layout_constraintLeft_toRightOf="@id/reTweetButton"
+            app:layout_constraintTop_toTopOf="@id/reTweetButton" />
+        <ImageView
+            android:id="@+id/commentButton"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="@id/reTweetButton"
+            app:layout_constraintLeft_toRightOf="@id/reTweetCount"
+            app:layout_constraintTop_toTopOf="@id/reTweetButton" />
+
+        <TextView
+            android:id="@+id/commentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/commentButton"
+            app:layout_constraintLeft_toRightOf="@id/commentButton"
+            app:layout_constraintTop_toTopOf="@id/commentButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
